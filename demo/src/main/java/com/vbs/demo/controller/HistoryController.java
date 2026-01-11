@@ -14,6 +14,7 @@ import java.util.List;
 public class HistoryController {
     @Autowired
     HistoryRepo historyRepo;
+
     @GetMapping("/histories")
     public List<History> getHistories() {
         return historyRepo.findAll();
